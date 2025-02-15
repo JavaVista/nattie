@@ -1,11 +1,14 @@
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
   production: false,
-  supabaseUrl: 'YOUR_SUPABASE_PROJECT_URL',
-  supabaseAnonKey: 'YOUR_SUPABASE_ANON_PUBLIC_KEY',
+  supabaseUrl: process.env['SUPABASE_URL'] || '',
+  supabaseAnonKey: process.env['SUPABASE_ANON_KEY'] || ''
 };
 
 /*
