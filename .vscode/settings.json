@@ -5,5 +5,12 @@
   ],
   "conventionalCommits.scopes": [
     "android"
+  ],
+  "cSpell.words": [
+    "bazel",
+    "libpeerconnection",
+    "mnpcod",
+    "testem",
+    "xcuserstate"
   ]
 }
