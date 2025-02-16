@@ -64,9 +64,6 @@
               "sourceMap": true,
               "namedChunks": true
             },
-
-
-
             "ci": {}
           },
           "defaultConfiguration": "production"
@@ -115,7 +112,6 @@
           },
           "configurations": {
             "ci": {
-
               "watch": false
             }
           }
@@ -135,7 +131,8 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-    ]
+    ],
+    "analytics": "e62a25bd-cecc-42fe-bccc-3e776b90511e"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

@@ -4,8 +4,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/inbox',
+    redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'home', loadComponent: () => import('./home/home.page').then(m => m.HomePage)
   },
 ];
 
@@ -15,4 +18,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
